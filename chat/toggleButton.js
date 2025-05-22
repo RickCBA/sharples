@@ -1,5 +1,7 @@
 import { centerChatWindow } from './helper/centerChatWindow.js';
 
+const assetBaseUrl = new URL('../assets/', import.meta.url).href;
+
 export function setupToggleButton() {
   const overlay = document.getElementById('chat-overlay');
   const chatToggleButton = document.querySelector(
@@ -36,7 +38,7 @@ export function setupToggleButton() {
   });
   chatToggleButton.innerHTML = `
     <span style="margin-right: 0.5em; font-size: 1em;">Make an Enquiry</span>
-    <img src="assets/chat-message-icon-svg.svg" alt="Chat Icon" style="width: 1.5em; height: 1.5em;" />
+    <img src="${assetBaseUrl}chat-message-icon-svg.svg" alt="Chat Icon" style="width: 1.5em; height: 1.5em;" />
   `;
 
   chatToggleButton.addEventListener('click', () => {
@@ -47,7 +49,7 @@ export function setupToggleButton() {
     if (chatOpened) {
       // centerChatWindow(); // Function to center chat window chatOpened is true
       Object.assign(chatToggleButton.style, {
-        backgroundImage: "url('assets/delete.png')",
+        backgroundImage: `url('${assetBaseUrl}delete.png')`,
         width: '55px',
         height: '55px',
         border: '5px solid #C97F01',
@@ -73,7 +75,7 @@ export function setupToggleButton() {
       });
       chatToggleButton.innerHTML = `
         <span style="margin-right: 10px;">Make an Enquiry</span>
-        <img src="assets/chat-message-icon-svg.svg" alt="Chat Icon" style="width: 30px; height: 30px;" />
+        <img src="${assetBaseUrl}chat-message-icon-svg.svg" alt="Chat Icon" style="width: 30px; height: 30px;" />
       `;
     }
   });
