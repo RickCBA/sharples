@@ -1765,3 +1765,7 @@ body[data-theme='dark'] .hljs-deletion {
     right: 1rem;
   }
 }
+
+textarea::placeholder {
+  line-height: 0;
+}
