@@ -1607,6 +1607,13 @@ body[data-theme='dark'] .hljs-deletion {
 
 /* 480px Media Queries */
 @media (max-width: 480px) {
+
+  @supports (margin-bottom: 20svh) {
+    #n8n-chat-widget-2 .chat-footer {
+      margin-bottom: 20svh; /* Small viewport height for mobile only */
+    }
+  }
+  
   .chat-window-wrapper .chat-window .chat-layout {
     padding: 35px 10px;
   }
@@ -1721,12 +1728,6 @@ body[data-theme='dark'] .hljs-deletion {
     transform: translateY(-50%);
     bottom: 0.9rem;
     right: 1rem;
-  }
-  
-  @supports (margin-bottom: 20svh) {
-    #n8n-chat-widget-2 .chat-footer {
-      margin-bottom: 20svh; /* Small viewport height for mobile only */
-    }
   }
 }
 
