@@ -728,7 +728,6 @@ body[data-theme='dark'] .hljs-deletion {
   width: 100%;
   border: var(--chat--input--border, 0);
   border-radius: var(--chat--input--border-radius, 0);
-  padding: 0.8rem;
   padding-right: calc(
     2rem + var(--controls-count, 1) * var(--chat--textarea--height)
   );
