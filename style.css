@@ -1574,6 +1574,7 @@ body[data-theme='dark'] .hljs-deletion {
   }
   #n8n-chat-widget-2 .chat-footer {
     border-width: 2px;
+    margin-bottom: 40%
   }
 
   #n8n-chat-widget-2 .chat-message {
