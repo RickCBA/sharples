@@ -1011,8 +1011,7 @@ body[data-theme='dark'] .hljs-deletion {
   max-height: calc(
     100% - var(--chat--window--bottom, var(--chat--spacing)) * 2
   );
-  bottom: calc(40px + var(--safe-area-inset-bottom));
-
+  bottom: 40px;
 }
 .chat-window-wrapper .chat-window {
   display: flex;
@@ -1133,10 +1132,7 @@ body[data-theme='dark'] .hljs-deletion {
   border: 3px solid var(--button-bg);
   border-radius: 32px;
   max-width: 100%;
-  /* keep the footer textarea above the nav */
-  margin-bottom: calc(44px + var(--safe-area-inset-bottom));
-  /* pad inside so content never sits under the nav bar */
-  padding-bottom: var(--safe-area-inset-bottom);
+  margin-bottom: 44px;
 
 }
 
