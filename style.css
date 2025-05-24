@@ -1727,3 +1727,15 @@ body[data-theme='dark'] .hljs-deletion {
 textarea::placeholder {
   line-height: 0;
 }
+
+
+/* Safari-only media query for mobile devices */
+@media not all and (min-resolution:.001dpcm) {
+  @media (max-width: 480px) {
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+      #n8n-chat-widget-2 .chat-footer {
+        margin-bottom: 20svh; /* Apply only to Safari */
+      }
+    }
+  }
+}
