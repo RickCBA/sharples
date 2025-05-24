@@ -1132,7 +1132,7 @@ body[data-theme='dark'] .hljs-deletion {
   border: 3px solid var(--button-bg);
   border-radius: 32px;
   max-width: 100%;
-  margin-bottom: 120px;
+  margin-bottom: 44px;
 }
 
 /* Chat body styling */
