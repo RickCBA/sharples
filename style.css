@@ -1672,8 +1672,6 @@ body[data-theme='dark'] .hljs-deletion {
   .chat-inputs textarea[data-v-2a7fb1c3] {
     font-size: 1.1rem;
     min-height: 48px;
-    padding: 0.8rem 1rem;
-    border-radius: 18px;
   }
   .chat-button {
     width: 90vw;
