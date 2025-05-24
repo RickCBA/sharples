@@ -1133,7 +1133,13 @@ body[data-theme='dark'] .hljs-deletion {
   border-radius: 32px;
   max-width: 100%;
   margin-bottom: 44px;
-  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@supports (margin-bottom: 20svh) {
+  #n8n-chat-widget-2 .chat-footer {
+    margin-bottom: calc(20px + env(safe-area-inset-bottom));
+    margin-bottom: 20svh; /* Reduced value for small viewport height */
+  }
 }
 
 
