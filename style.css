@@ -1206,7 +1206,6 @@ body[data-theme='dark'] .hljs-deletion {
   border: none;
   background: transparent;
   color: var(--input-text);
-  padding: 0.8rem;
   outline: none;
   display: flex;
   align-items: center;
