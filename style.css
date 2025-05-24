@@ -1638,12 +1638,6 @@ body[data-theme='dark'] .hljs-deletion {
     align-items: center;
   }
 
-  #n8n-chat-widget-2 .chat-footer {
-    border-width: 2px;
-    margin-bottom: 15%;
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
-    border-radius: 24px;
-  }
 
   #n8n-chat-widget-2 .chat-message {
     max-width: 100%;
@@ -1694,17 +1688,6 @@ body[data-theme='dark'] .hljs-deletion {
     padding-left: 60px;
     padding-top: 14px;
     padding-bottom: 14px;
-  }
-
-  #n8n-chat-widget-2 .chat-footer button {
-    width: 56px;
-    height: 56px;
-    font-size: 2rem;
-    border-radius: 50%;
-    right: 0.2rem;
-    top: 0.2rem;
-    bottom: 0.2rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   }
 
   #n8n-chat-widget-2 .chat-message {
