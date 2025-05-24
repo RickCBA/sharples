@@ -1132,7 +1132,7 @@ body[data-theme='dark'] .hljs-deletion {
   border: 3px solid var(--button-bg);
   border-radius: 32px;
   max-width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 120px;
 }
 
 /* Chat body styling */
@@ -1573,10 +1573,6 @@ body[data-theme='dark'] .hljs-deletion {
   .centered-chat {
     width: 95%;
   }
-  #n8n-chat-widget-2 .chat-footer {
-    border-width: 2px;
-    margin-bottom: 7.3rem;
-  }
 
   #n8n-chat-widget-2 .chat-message {
     font-size: 1rem;
@@ -1710,10 +1706,6 @@ body[data-theme='dark'] .hljs-deletion {
 
 /* 320px Media Queries */
 @media (max-width: 320px) {
-  #n8n-chat-widget-2 .chat-footer {
-    margin-bottom: 55%;
-  }
-
   #n8n-chat-widget-2 .chat-message {
     max-width: 100%;
     line-height: 1.4;
