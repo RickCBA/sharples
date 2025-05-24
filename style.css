@@ -1418,7 +1418,7 @@ body[data-theme='dark'] .hljs-deletion {
   top: 50% !important;
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
-  width: 80% !important;
+  width: 90% !important;
   max-width: 500px !important;
   height: auto !important;
   z-index: 10000 !important;
