@@ -1571,11 +1571,9 @@ body[data-theme='dark'] .hljs-deletion {
 @media (max-width: 768px) {
   .centered-chat {
     width: 95%;
-    padding: 10px;
   }
   #n8n-chat-widget-2 .chat-footer {
     border-width: 2px;
-    margin-bottom: 50%;
   }
 
   #n8n-chat-widget-2 .chat-message {
