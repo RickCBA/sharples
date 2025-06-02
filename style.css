@@ -1735,7 +1735,7 @@ textarea::placeholder {
   @media (max-width: 480px) {
     @supports (-webkit-appearance:none) and (stroke-color:transparent) {
       #n8n-chat-widget-2 .chat-footer {
-        margin-bottom: 20svh; /* Apply only to Safari */
+        margin-bottom: 25svh; /* Apply only to Safari */
       }
     }
   }
