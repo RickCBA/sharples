@@ -2,8 +2,6 @@
   color: #24292e;
   background: #fff;
 }
-
-#n8n-chat-widget-2 {
 .hljs-doctag,
 .hljs-keyword,\
 .hljs-meta .hljs-keyword,
@@ -1743,5 +1741,4 @@ textarea::placeholder {
       }
     }
   }
-}
 }
