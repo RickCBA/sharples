@@ -1215,7 +1215,7 @@ body[data-theme='dark'] .hljs-deletion {
   padding-top: 1rem;
 }
 
-.chat-inputs textarea::-webkit-input-placeholder {
+#n8n-chat-widget-2 .chat-inputs textarea::-webkit-input-placeholder {
   color: #525252 !important;
   padding: 10px;
 }
@@ -1414,7 +1414,7 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* Centered chat window styling */
-.centered-chat {
+#n8n-chat-widget-2 .centered-chat {
   position: fixed !important;
   top: 50% !important;
   left: 50% !important;
@@ -1426,7 +1426,7 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* ===== New: Overlay styling ===== */
-.chat-overlay {
+#n8n-chat-widget-2 .chat-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -1438,7 +1438,7 @@ body[data-theme='dark'] .hljs-deletion {
   display: none;
 }
 
-.chat-window-wrapper .chat-window .chat-layout {
+#n8n-chat-widget-2 .chat-window-wrapper .chat-window .chat-layout {
   padding-bottom: 20px;
   padding-top: 0px;
   display: flex;
@@ -1450,7 +1450,7 @@ body[data-theme='dark'] .hljs-deletion {
   overflow: hidden;
 }
 
-.custom-adjacent-refresh-button {
+#n8n-chat-widget-2 .custom-adjacent-refresh-button {
   position: absolute;
   top: 2%;
   left: 105%;
@@ -1471,12 +1471,12 @@ body[data-theme='dark'] .hljs-deletion {
   animation: slideButton 0.8s ease 0s 1 forwards running;
 }
 
-.custom-adjacent-refresh-button:hover {
+#n8n-chat-widget-2 .custom-adjacent-refresh-button:hover {
   transition: all 0.5s linear;
   scale: 1.05;
 }
 
-.loading-animation {
+#n8n-chat-widget-2 .loading-animation {
   width: 45px;
   aspect-ratio: 1;
   --c: no-repeat linear-gradient(#000 0 0);
@@ -1571,7 +1571,7 @@ body[data-theme='dark'] .hljs-deletion {
 
 /* 768px Media queries */
 @media (max-width: 768px) {
-  .centered-chat {
+ #n8n-chat-widget-2  .centered-chat {
     width: 95%;
   }
 
@@ -1580,26 +1580,26 @@ body[data-theme='dark'] .hljs-deletion {
     padding: 8px 32px;
   }
 
-  .custom-adjacent-refresh-button {
+#n8n-chat-widget-2   .custom-adjacent-refresh-button {
     left: 100%;
     top: 2%;
     transform: translateX(-50%);
   }
 
-  .my-canned-bot-message .canned-messages-grid {
+ #n8n-chat-widget-2  .my-canned-bot-message .canned-messages-grid {
     padding-right: 0;
     gap: 6px;
   }
 
-  .my-canned-bot-message .canned-messages-grid button {
+#n8n-chat-widget-2   .my-canned-bot-message .canned-messages-grid button {
     flex: 1 1 100%;
   }
 
-  .chat-window-wrapper .chat-window .chat-layout {
+ #n8n-chat-widget-2  .chat-window-wrapper .chat-window .chat-layout {
     padding: 35px 10px;
   }
 
-  .custom-adjacent-refresh-button {
+ #n8n-chat-widget-2  .custom-adjacent-refresh-button {
     left: auto;
     right: 20px;
     transform: none;
@@ -1608,11 +1608,11 @@ body[data-theme='dark'] .hljs-deletion {
 
 /* 480px Media Queries */
 @media (max-width: 480px) {
-  .chat-window-wrapper .chat-window .chat-layout {
+  #n8n-chat-widget-2 .chat-window-wrapper .chat-window .chat-layout {
     padding: 35px 10px;
   }
 
-  .centered-chat {
+  #n8n-chat-widget-2 .centered-chat {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -1642,34 +1642,34 @@ body[data-theme='dark'] .hljs-deletion {
     line-height: 1.6;
   }
 
-  .custom-adjacent-refresh-button {
+  #n8n-chat-widget-2 .custom-adjacent-refresh-button {
     width: 28px;
     height: 28px;
     right: 1rem;
     top: 2%;
   }
 
-  .chat-overlay {
+  #n8n-chat-widget-2 .chat-overlay {
     backdrop-filter: blur(2px);
   }
-  .chat-inputs[data-v-2a7fb1c3] {
+  #n8n-chat-widget-2 .chat-inputs[data-v-2a7fb1c3] {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .chat-inputs-controls[data-v-2a7fb1c3] {
+  #n8n-chat-widget-2 .chat-inputs-controls[data-v-2a7fb1c3] {
     right: 0.5rem;
     bottom: 0.5rem;
   }
-  .chat-inputs textarea[data-v-2a7fb1c3] {
+ #n8n-chat-widget-2  .chat-inputs textarea[data-v-2a7fb1c3] {
     font-size: 1.1rem;
     min-height: 48px;
   }
-  .chat-button {
+  #n8n-chat-widget-2 .chat-button {
     width: 90vw;
     height: auto;
     font-size: 0.9rem;
   }
-  .chat-messages-list {
+  #n8n-chat-widget-2 .chat-messages-list {
     font-size: larger;
   }
 
@@ -1712,7 +1712,7 @@ body[data-theme='dark'] .hljs-deletion {
     line-height: 1.4;
   }
 
-  .custom-adjacent-refresh-button {
+  #n8n-chat-widget-2 .custom-adjacent-refresh-button {
     width: 24px;
     height: 24px;
     top: 2.5%;
