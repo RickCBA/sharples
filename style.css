@@ -745,7 +745,7 @@ body[data-theme='dark'] .hljs-deletion {
   border-color: var(--chat--input--border-active, 0);
 }
 /* Controls */
-.chat-inputs-controls[data-v-2a7fb1c3] {
+#n8n-chat-widget-2 .chat-inputs-controls[data-v-2a7fb1c3] {
   display: flex;
   right: 1rem;
   bottom: 0.8rem;
