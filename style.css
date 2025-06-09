@@ -734,7 +734,6 @@ body[data-theme='dark'] .hljs-deletion {
   min-height: var(--chat--textarea--height);
   max-height: var(--chat--textarea--max-height, var(--chat--textarea--height));
   height: 100%;
-  background: var(--chat--input--background, white);
   resize: var(--chat--textarea--resize, none);
   color: var(--chat--input--text-color, initial);
   outline: none;
