@@ -2,6 +2,8 @@
   color: #24292e;
   background: #fff;
 }
+
+#n8n-chat-widget-2 {
 .hljs-doctag,
 .hljs-keyword,\
 .hljs-meta .hljs-keyword,
@@ -1075,6 +1077,8 @@ body[data-theme='dark'] .hljs-deletion {
 .chat-window-toggle-transition-leave-to {
   opacity: 0;
 }
+{
+
 #n8n-chat-widget-2 {
   --primary-color: #808080;
   --secondary-color: transparent;
@@ -1107,14 +1111,14 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* Chat window customizations */
-#n8n-chat-widget-2 {
+{
   max-width: 100%;
   width: 100%;
   box-sizing: border-box;
   position: relative;
 }
 
-#n8n-chat-widget-2 .chat-window {
+.chat-window {
   background: transparent;
   border: none;
   box-shadow: none;
@@ -1123,11 +1127,11 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* Hide the header (welcome text) */
-#n8n-chat-widget-2 .chat-header {
+.chat-header {
   display: none;
 }
 
-#n8n-chat-widget-2 .chat-footer {
+.chat-footer {
   background: rgba(255, 255, 255, 0.9);
   border: 3px solid var(--button-bg);
   border-radius: 32px;
@@ -1137,7 +1141,7 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* Chat body styling */
-#n8n-chat-widget-2 .chat-body {
+.chat-body {
   background: transparent;
   padding: 0;
   overflow-y: auto;
@@ -1148,12 +1152,12 @@ body[data-theme='dark'] .hljs-deletion {
   overflow-x: hidden;
 }
 
-#n8n-chat-widget-2 .chat-body::-webkit-scrollbar {
+.chat-body::-webkit-scrollbar {
   display: none;
 }
 
 /* Chat messages */
-#n8n-chat-widget-2 .chat-message {
+.chat-message {
   width: auto;
   max-width: 90%;
   padding: 10px 14px;
@@ -1162,7 +1166,7 @@ body[data-theme='dark'] .hljs-deletion {
   line-height: 1.4;
 }
 
-#n8n-chat-widget-2 .chat-message.chat-message-from-bot {
+.chat-message.chat-message-from-bot {
   background: var(--bot-msg-bg);
   color: var(--bot-msg-text);
   text-align: left;
@@ -1176,7 +1180,7 @@ body[data-theme='dark'] .hljs-deletion {
   animation: messages 2s ease 0s 1 forwards running !important;
 }
 
-#n8n-chat-widget-2 .chat-message.chat-message-from-bot::before {
+.chat-message.chat-message-from-bot::before {
   content: '';
   position: absolute;
   top: 0.4rem;
@@ -1192,7 +1196,7 @@ body[data-theme='dark'] .hljs-deletion {
   animation: slideLeft 0.5s ease 0s 1 forwards running !important;
 }
 
-#n8n-chat-widget-2 .chat-message.chat-message-from-user {
+.chat-message.chat-message-from-user {
   background: var(--reply-text-bg);
   color: var(--button-text);
   margin-left: auto;
@@ -1201,7 +1205,7 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* Chat input area styling */
-#n8n-chat-widget-2 .chat-inputs textarea {
+.chat-inputs textarea {
   font-size: inherit;
   width: 100%;
   border: none;
@@ -1221,7 +1225,7 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* Send button styling */
-#n8n-chat-widget-2 .chat-footer button {
+.chat-footer button {
   background: var(--button-bg);
   color: var(--button-text);
   border: none;
@@ -1240,12 +1244,12 @@ body[data-theme='dark'] .hljs-deletion {
   margin-bottom: 0 !important;
 }
 
-#n8n-chat-widget-2 .chat-footer button:hover {
+.chat-footer button:hover {
   background: var(--secondary-lite);
 }
 
 /* Toggle styling with an image */
-#n8n-chat-widget-2 .chat-window-wrapper .chat-window-toggle {
+.chat-window-wrapper .chat-window-toggle {
   width: 220px;
   height: var(--chat--toggle--height);
   font-family: 'Boxly', sans-serif;
@@ -1268,7 +1272,7 @@ body[data-theme='dark'] .hljs-deletion {
   animation: slideButton 1.5s ease 0s 1 normal forwards running !important;
 }
 
-#n8n-chat-widget-2 .chat-window-wrapper .chat-window-toggle:hover {
+.chat-window-wrapper .chat-window-toggle:hover {
   background-image: url('https://github.com/RickCBA/widget-centered/blob/main/Alan%20Toggle%20Button2.png?raw=true');
   /* Slight lift on hover */
   transform: translateY(5px);
@@ -1277,11 +1281,11 @@ body[data-theme='dark'] .hljs-deletion {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
-#n8n-chat-widget-2 .chat-window-wrapper .chat-window-toggle:active {
+.chat-window-wrapper .chat-window-toggle:active {
   background-image: url('https://github.com/RickCBA/widget-centered/blob/main/Alan%20Toggle%20Button2.png?raw=true');
 }
 
-#n8n-chat-widget-2 .chat-message-typing .chat-message-typing-body {
+.chat-message-typing .chat-message-typing-body {
   padding: 10px 0px;
   animation: slideleft 0.8s ease 0s 1 forwards running;
 }
@@ -1293,7 +1297,7 @@ body[data-theme='dark'] .hljs-deletion {
   display: none;
 }
 
-#n8n-chat-widget-2 .chat-window-wrapper .chat-window-toggle svg:not(:root) {
+.chat-window-wrapper .chat-window-toggle svg:not(:root) {
   border-radius: 50%;
   background: url('https://github.com/RickCBA/widget-centered/blob/main/1image.png?raw=true')
     no-repeat center center;
@@ -1301,7 +1305,7 @@ body[data-theme='dark'] .hljs-deletion {
   margin-bottom: 48px;
 }
 
-#n8n-chat-widget-2 .chat-window-toggle {
+.chat-window-toggle {
   position: fixed;
   bottom: 2em;
   right: 2rem;
@@ -1309,16 +1313,16 @@ body[data-theme='dark'] .hljs-deletion {
   transition: all 0.3s ease;
 }
 
-#n8n-chat-widget-2 .chat-window-toggle-transition-leave-to {
+.chat-window-toggle-transition-leave-to {
   animation-duration: 240s;
 }
 
-#n8n-chat-widget-2 .chat-get-started-footer {
+.chat-get-started-footer {
   display: none;
 }
 
 /* Chat button styling */
-#n8n-chat-widget-2 .chat-button {
+.chat-button {
   order: 2;
   position: relative;
   background-color: var(--button-bg);
@@ -1333,11 +1337,11 @@ body[data-theme='dark'] .hljs-deletion {
   margin-top: 18px;
 }
 
-#n8n-chat-widget-2 .chat-button:hover {
+.chat-button:hover {
   background-color: var(--secondary-lite);
 }
 
-#n8n-chat-widget-2 .chat-button::before {
+.chat-button::before {
   content: 'I agree, Start Chat';
   position: absolute;
   top: 50%;
@@ -1349,7 +1353,7 @@ body[data-theme='dark'] .hljs-deletion {
   white-space: nowrap;
 }
 
-#n8n-chat-widget-2 .privacy-btn {
+.privacy-btn {
   background: transparent;
   border: none;
   color: var(--button-bg);
@@ -1362,12 +1366,12 @@ body[data-theme='dark'] .hljs-deletion {
   transform: translateX(-50%);
 }
 
-#n8n-chat-widget-2 .privacy-btn:hover {
+.privacy-btn:hover {
   color: var(--secondary-lite);
 }
 
 /* 1. Two-column grid with a sensible max width */
-#n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid {
+.my-canned-bot-message .canned-messages-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px 16px;           /* vertical 12px, horizontal 16px */
@@ -1377,7 +1381,7 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* 2. Buttons: same styles as before */
-#n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid button {
+.my-canned-bot-message .canned-messages-grid button {
   background: var(--bot-msg-bg);
   color: #333;
   border: none;
@@ -1391,24 +1395,24 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 /* 3. Last button spans both columns */
-#n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid button:last-child {
+.my-canned-bot-message .canned-messages-grid button:last-child {
   grid-column: 1 / -1;
 }
 
 /* 4. Hover & active states */
-#n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid button:hover {
+.my-canned-bot-message .canned-messages-grid button:hover {
   background: var(--option-background-hover);
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   transform: translateY(-2px);
 }
-#n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid button:active {
+.my-canned-bot-message .canned-messages-grid button:active {
   box-shadow: 0 2px 4px rgba(0,0,0,0.10);
   transform: translateY(0);
 }
 
 /* 5. Collapse to single column on small screens */
 @media (max-width: 480px) {
-  #n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid {
+  .my-canned-bot-message .canned-messages-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -1575,7 +1579,7 @@ body[data-theme='dark'] .hljs-deletion {
     width: 95%;
   }
 
-  #n8n-chat-widget-2 .chat-message {
+  .chat-message {
     font-size: 1rem;
     padding: 8px 32px;
   }
@@ -1623,7 +1627,7 @@ body[data-theme='dark'] .hljs-deletion {
     z-index: 10000;
   }
 
-  #n8n-chat-widget-2 .chat-message.chat-message-from-bot::before {
+  .chat-message.chat-message-from-bot::before {
     content: '';
     position: absolute;
     top: 10px;
@@ -1636,7 +1640,7 @@ body[data-theme='dark'] .hljs-deletion {
   }
 
 
-  #n8n-chat-widget-2 .chat-message {
+  .chat-message {
     max-width: 100%;
     font-size: 1rem;
     line-height: 1.6;
@@ -1673,32 +1677,32 @@ body[data-theme='dark'] .hljs-deletion {
     font-size: larger;
   }
 
-  #n8n-chat-widget-2 .chat-window-toggle {
+  .chat-window-toggle {
     transform: translateX(-50%);
     transform: translateY(-50%);
     bottom: 1rem;
     right: 1rem;
   }
 
-  #n8n-chat-widget-2 .chat-message.chat-message-from-bot {
+  .chat-message.chat-message-from-bot {
     font-size: 1.6;
     padding-left: 60px;
     padding-top: 14px;
     padding-bottom: 14px;
   }
 
-  #n8n-chat-widget-2 .chat-message {
+  .chat-message {
     font-size: 1rem;
     padding: 10px 12px;
     border-radius: 18px;
   }
 
-  #n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid {
+  .my-canned-bot-message .canned-messages-grid {
     gap: 2px 0;
     padding: 0 0.5rem;
   }
 
-  #n8n-chat-widget-2 .my-canned-bot-message .canned-messages-grid button {
+  .my-canned-bot-message .canned-messages-grid button {
     font-size: 1rem;
     padding: 12px 8px;
     border-radius: 18px;
@@ -1707,7 +1711,7 @@ body[data-theme='dark'] .hljs-deletion {
 
 /* 320px Media Queries */
 @media (max-width: 320px) {
-  #n8n-chat-widget-2 .chat-message {
+  .chat-message {
     max-width: 100%;
     line-height: 1.4;
   }
@@ -1717,7 +1721,7 @@ body[data-theme='dark'] .hljs-deletion {
     height: 24px;
     top: 2.5%;
   }
-  #n8n-chat-widget-2 .chat-window-toggle {
+  .chat-window-toggle {
     transform: translateX(-50%);
     transform: translateY(-50%);
     bottom: 0.9rem;
@@ -1734,9 +1738,10 @@ textarea::placeholder {
 @media not all and (min-resolution:.001dpcm) {
   @media (max-width: 480px) {
     @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-      #n8n-chat-widget-2 .chat-footer {
+      .chat-footer {
         margin-bottom: 20svh; /* Apply only to Safari */
       }
     }
   }
+}
 }
