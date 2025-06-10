@@ -840,7 +840,6 @@ body[data-theme='dark'] .hljs-deletion {
   max-width: 90%;
 }
 #n8n-chat-widget-2 .chat-layout .chat-footer {
-  border-top: 1px solid var(--chat--color-light-shade-100);
   background: var(--chat--footer--background, var(--chat--color-light));
   color: var(--chat--footer--color, var(--chat--color-dark));
 }
