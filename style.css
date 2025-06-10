@@ -839,7 +839,7 @@ body[data-theme='dark'] .hljs-deletion {
   min-height: 100px;
   max-width: 90%;
 }
-.chat-layout .chat-footer {
+#n8n-chat-widget-2 .chat-layout .chat-footer {
   border-top: 1px solid var(--chat--color-light-shade-100);
   background: var(--chat--footer--background, var(--chat--color-light));
   color: var(--chat--footer--color, var(--chat--color-dark));
@@ -1122,7 +1122,6 @@ body[data-theme='dark'] .hljs-deletion {
 }
 
 #n8n-chat-widget-2 .chat-footer {
-  background: rgba(255, 255, 255, 0.9);
   border: 3px solid var(--button-bg);
   border-radius: 32px;
   max-width: 100%;
