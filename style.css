@@ -799,7 +799,7 @@ body[data-theme='dark'] .hljs-deletion {
   gap: 0.25rem;
   padding: var(--chat--files-spacing, 0.25rem);
 }
-.chat-layout {
+#n8n-chat-widget-2 .chat-layout {
   width: 100%;
   height: 100%;
   display: flex;
