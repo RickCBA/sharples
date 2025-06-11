@@ -4,6 +4,11 @@ import { refreshButton } from './chat/refreshButton.js';
 import { getInitialMessages } from './chat/cannedMessages.js';
 
 window.addEventListener('load', () => {
+  if (window.location.pathname === '/contact') {
+    const overlay = document.getElementById('chat-overlay');
+    if (overlay) overlay.style.display = 'none';
+  }
+});
   const sessionId = crypto.randomUUID(); // Create a global ID
   window.chatInstance = null;
 
