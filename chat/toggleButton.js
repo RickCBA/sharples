@@ -9,10 +9,15 @@ export function setupToggleButton() {
   );
 
   let manualClicked = false;
-  let chatOpened = false;
+  let chatOpened    = false;
 
+  // ─── Check if we've already auto-opened in this session ───
+  const hasAutoOpened = sessionStorage.getItem('chatAutoOpened') === 'true';
+
+  // Initial styling
   chatToggleButton.style.backgroundImage = 'none';
 
+  // Show loading spinner
   const loadingAnimation = document.createElement('div');
   loadingAnimation.className = 'loading-animation';
   Object.assign(loadingAnimation.style, {
@@ -25,6 +30,7 @@ export function setupToggleButton() {
   });
   document.body.appendChild(loadingAnimation);
 
+  // Style the toggle button
   Object.assign(chatToggleButton.style, {
     background: 'linear-gradient(to left, #F9B04B, #C97F01, #A05A00)',
     width: '220px',
@@ -41,13 +47,14 @@ export function setupToggleButton() {
     <img src="${assetBaseUrl}chat-message-icon-svg.svg" alt="Chat Icon" style="width: 1.5em; height: 1.5em;" />
   `;
 
+  // Manual click toggles the overlay
   chatToggleButton.addEventListener('click', () => {
     manualClicked = true;
-    chatOpened = !chatOpened;
+    chatOpened    = !chatOpened;
     overlay.style.display = chatOpened ? 'block' : 'none';
 
     if (chatOpened) {
-      // centerChatWindow(); // Function to center chat window chatOpened is true
+      // ▶ open state styling
       Object.assign(chatToggleButton.style, {
         backgroundImage: `url('${assetBaseUrl}delete.png')`,
         width: '55px',
@@ -61,7 +68,9 @@ export function setupToggleButton() {
         padding: '0',
       });
       chatToggleButton.innerHTML = '';
+      centerChatWindow();
     } else {
+      // ◀ closed state styling
       Object.assign(chatToggleButton.style, {
         background: 'linear-gradient(to left, #F9B04B, #C97F01, #A05A00)',
         width: '220px',
@@ -80,14 +89,23 @@ export function setupToggleButton() {
     }
   });
 
-  setTimeout(() => {
+  // ─── Only auto-open if we haven't already this session ───
+  if (!hasAutoOpened) {
+    setTimeout(() => {
+      document.body.removeChild(loadingAnimation);
+
+      if (!manualClicked) {
+        chatToggleButton.click();
+        overlay.style.display = 'block';
+        chatOpened = true;
+        centerChatWindow();
+
+        // mark auto-open as done for the rest of this session
+        sessionStorage.setItem('chatAutoOpened', 'true');
+      }
+    }, 2500);
+  } else {
+    // if already auto-opened, just remove the spinner
     document.body.removeChild(loadingAnimation);
-    if (!manualClicked && chatToggleButton) {
-      chatToggleButton.click();
-      overlay.style.display = 'block';
-      chatOpened = true;
-      centerChatWindow();
-      sessionStorage.setItem('chatAutoOpened', 'true');
-    }
-  }, 2500);
+  }
 }
