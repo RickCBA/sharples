@@ -4,12 +4,14 @@ import { refreshButton } from './chat/refreshButton.js';
 import { getInitialMessages } from './chat/cannedMessages.js';
 
 window.addEventListener('load', () => {
-  // ─── Bail out on /contact ───
-  if (window.location.pathname === '/contact') {
-    const overlay = document.getElementById('chat-overlay');
-    if (overlay) overlay.style.display = 'none';
-    return;  // stop here, skip all chat setup
+if (window.location.pathname.replace(/\/+$/, '') === '/contact') {
+  const overlay = document.getElementById('chat-overlay');
+  if (overlay) {
+    // set display:none!important
+    overlay.style.setProperty('display', 'none', 'important');
   }
+  return;
+}
 
   // ─── Otherwise, go ahead and initialize chat ───
   const sessionId = crypto.randomUUID(); // Create a global ID
